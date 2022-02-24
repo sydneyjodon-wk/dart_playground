@@ -1,0 +1,14 @@
+targets:
+  $default:
+    builders:
+      build_web_compilers|entrypoint:
+        options:
+          dart2js_args:
+            # Disable minification for easier test/example debugging
+            - --no-minify
+      test_html_builder:
+        options:
+          browser_aggregation: true
+          templates:
+            "test/unit/rtl_unit_test_template.html":
+              - "test/unit/**_test.dart"

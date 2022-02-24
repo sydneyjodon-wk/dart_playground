@@ -1,0 +1,5 @@
+presets:
+  browser-aggregate:
+    platforms: [chrome]
+    paths:
+      - test/unit/rtl_unit_test_template.browser_aggregate_test.dart
