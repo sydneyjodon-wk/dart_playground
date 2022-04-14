@@ -8,6 +8,21 @@ environment:
 dependencies:
   over_react: ^4.0.0
   react: ^6.0.0
+  react_material_ui:
+    hosted:
+      name: react_material_ui
+      url: https://pub.workiva.org
+    version: ^1.17.5
+  web_skin_dart:
+    hosted:
+      name: web_skin_dart
+      url: https://pub.workiva.org
+    version: any
+  web-skin:
+    hosted:
+      name: web-skin
+      url: https://pub.workiva.org
+    version: any
   meta: '<1.7.0'
 
 dev_dependencies:
@@ -17,3 +32,9 @@ dev_dependencies:
   react_testing_library: ^2.0.0
   test: ^1.15.7
   test_html_builder: ^2.2.2
+
+dependency_overrides:
+  react_material_ui:
+    git:
+      url: git@github.com:Workiva/react_material_ui.git
+      ref: export-grid-dev-branch

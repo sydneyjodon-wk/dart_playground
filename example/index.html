@@ -19,22 +19,31 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta charset="utf-8">
-    <title>Dart Playground</title>
+    <title>Workiva Link Design System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/packages/storybook/storybook_base.css" data-static-asset-pinned-first="true">
 
-    <!-- javascript -->
+    <!-- favicon / branding -->
+    <link rel="shortcut icon" type="image/x-icon" href="/packages/web_skin/dist/ico/favicon.ico">
 
+    <link rel="preload" href="/packages/web_skin/dist/fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/packages/web_skin/dist/fonts/lato/Lato-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/packages/web_skin/dist/fonts/lato/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/packages/web_skin/dist/fonts/icons/Wdesk_Icons.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/packages/react/react.js" as="script">
+    <link rel="preload" href="/packages/react/react_dom.js" as="script">
+    <link rel="preload" href="/main.dart.js" as="script">
 </head>
 <body>
 <div id="content"></div>
 
 <script src="packages/react/react.js"></script>
 <script src="packages/react/react_dom.js"></script>
+<script src="/packages/react_material_ui/react-material-ui.umd.js"></script>
 
 <script type="application/javascript" defer src="main.dart.js"></script>
 </body>
