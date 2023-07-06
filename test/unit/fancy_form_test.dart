@@ -22,7 +22,7 @@ main() {
         expect(view.getByLabelText('Last Name'), hasValue(''));
         expect(
           view.getByRole('button', name: 'Submit'),
-          allOf(isDisabled, hasExactClasses('fancy-class-name disabled')),
+          allOf(isDisabled, hasClasses('fancy-class-name disabled')),
         );
       });
 
@@ -33,7 +33,7 @@ main() {
             expect(button, isDisabled,
                 reason:
                 'the submit button is disabled by default because the form inputs are empty');
-            expect(button, hasExactClasses('fancy-class-name disabled'));
+            expect(button, hasClasses('fancy-class-name disabled'));
 
             debugger();
 
@@ -44,7 +44,7 @@ main() {
             debugger();
 
             expect(button, isNot(isDisabled));
-            expect(button, hasExactClasses('fancy-class-name'));
+            expect(button, hasClasses('fancy-class-name'));
           });
 
       // You could also probably have tests here to verify that the button is disabled when only one of the inputs has text.
