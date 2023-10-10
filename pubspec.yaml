@@ -32,3 +32,8 @@ dev_dependencies:
   react_testing_library: ^2.0.0
   test: ^1.9.1
   test_html_builder: '>=2.2.2 <4.0.0'
+  over_react_format:
+    hosted:
+      name: over_react_format
+      url: https://pub.workiva.org
+    version: ^3.1.0
